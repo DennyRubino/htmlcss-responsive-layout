@@ -34,8 +34,8 @@
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    /* padding-left: 20px;
-    padding-right: 20px; */
+     padding-left: 20px;
+    padding-right: 20px; 
 }
 
 .row {
@@ -89,15 +89,19 @@ ul li {list-style-type: none;
 .high {
 color: black;
 font-weight: 700;}
+
+.space {justify-content:space-between ;
+display: flex;}
 /*----------------
     BUTTONS
 ------------------*/
 .btn {
-    background-color: transparent;
+    background-color: white;
     font-family: inherit;
     border: none;
     padding: 6px 12px;
     cursor: pointer;
+    border-radius: 50%;
 }
 
 .btn-large {
@@ -153,6 +157,9 @@ main {
     margin: auto;
     display: block;
 }
+.space button > span {
+    display: none;
+}
 
 /*----------------
     FOOTER
@@ -175,9 +182,11 @@ main {
    ul {display: flex; 
     gap: 5px;
     width: 640px;
-    margin: auto;
+    margin: auto; 
 }
-    
+    .btn .btn-large {
+        padding: 10px 35px;
+        font-size: 16px;
 }
 
 /* Desktop da 992px a infinito */
@@ -192,5 +201,8 @@ main {
         margin: 0;
         padding: 5px;}
         ul {display: block;}
+        .space button > span {
+            display: inline;
+        }
     
 }
